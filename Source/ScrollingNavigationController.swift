@@ -192,9 +192,9 @@ open class ScrollingNavigationController: UINavigationController, UIGestureRecog
    Hide the navigation bar
 
    - parameter animated: If true the scrolling is animated. Defaults to `true`
-   - parameter duration: Optional animation duration. Defaults to 0.1
+   - parameter duration: Optional animation duration. Defaults to 0.2
    */
-  open func hideNavbar(animated: Bool = true, duration: TimeInterval = 0.1) {
+  open func hideNavbar(animated: Bool = true, duration: TimeInterval = 0.2) {
     guard let _ = self.scrollableView, let visibleViewController = self.visibleViewController else { return }
 
     guard state == .expanded else {
@@ -229,9 +229,9 @@ open class ScrollingNavigationController: UINavigationController, UIGestureRecog
    Show the navigation bar
 
    - parameter animated: If true the scrolling is animated. Defaults to `true`
-   - parameter duration: Optional animation duration. Defaults to 0.1
+   - parameter duration: Optional animation duration. Defaults to 0.2
    */
-  open func showNavbar(animated: Bool = true, duration: TimeInterval = 0.1) {
+  open func showNavbar(animated: Bool = true, duration: TimeInterval = 0.2) {
     guard let _ = self.scrollableView, let visibleViewController = self.visibleViewController else { return }
 
     guard state == .collapsed else {
